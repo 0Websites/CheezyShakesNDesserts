@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franchise Inquiry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="franchise.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><img width="100px" src="Assets/logo.png" alt=""></div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#location">Locations</a>
+            <a href="menu.html">Menu</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="index.html#about">Contact</a>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </nav>
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Get Started with Us</h1>
+            <p>Please provide following details. <br>
+                Team will get in touch with you shortly.</p>
+        </div>
+
+        <div class="form-box">
+
+            <form id="franchiseForm">
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>First Name <span>*</span></label>
+                        <input type="text" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name <span>*</span></label>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Phone <span>*</span></label>
+                    <input type="tel" placeholder="081234 56789" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email <span>*</span></label>
+                    <input type="email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>What is Your Professional Background? <span>*</span></label>
+                    <input type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label>City in Which You Are Interested in Taking Franchise? <span>*</span></label>
+                    <input type="text" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Budget Selection as per Franchise Business Model</label>
+                    <select>
+                        <option>Kiosk Franchise Model: 15 Lakh – 20 Lakh</option>
+                        <option>Standard Outlet Model: 25 Lakh – 35 Lakh</option>
+                        <option>Premium Café Model: 40 Lakh – 60 Lakh</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Description <span>*</span></label>
+                    <textarea required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">SUBMIT</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer class="premium-footer">
+
+        <div class="footer-overlay"></div>
+
+        <div class="footer-container">
+
+            <!-- LEFT LINKS -->
+            <div class="footer-col footer-left">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Get a Franchise</a></li>
+                </ul>
+            </div>
+
+            <!-- CENTER BRAND -->
+            <div class="footer-center">
+                <div class="brand-box">
+                    <h3>CHEEZY'S SHAKES <br>n' DESSERTS</h3>
+                    <div class="gold-divider"></div>
+                    <p>Coffee Solves Everything</p>
+                </div>
+            </div>
+
+            <!-- RIGHT LINKS -->
+            <div class="footer-col footer-right">
+                <div class="insta">
+                    <p>Follow us on Instagram</p>
+                    <a href="#">@cheezy_shakes_n_desserts</a>
+                </div>
+
+                <ul class="policy-links">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Return & Exchange Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>The Cheezy is owned by <span>Mayank Bhawsar</span></p>
+            <p>Cheezy Shakes n' Desserts · Developed by <a target="_blank"
+                    href="https://www.instagram.com/_vedanssh/">Vedansh Derashri</a></p>
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        const scriptURL = "https://script.google.com/macros/s/AKfycbw9F4POnymsbB-QtrWeFLp9A2u1PKzQL4oETuqSmb01o89Iu6uN-EbCZN9uve5OXZVT/exec";
+
+        document.getElementById("franchiseForm")
+            .addEventListener("submit", function (e) {
+
+                e.preventDefault();
+
+                const formData = {
+                    firstName: document.querySelector("input[placeholder='First Name']").value,
+                    lastName: document.querySelector("input[placeholder='Last Name']").value,
+                    phone: document.querySelector("input[type='tel']").value,
+                    email: document.querySelector("input[type='email']").value,
+                    background: document.querySelectorAll("input[type='text']")[2].value,
+                    city: document.querySelectorAll("input[type='text']")[3].value,
+                    budget: document.querySelector("select").value,
+                    description: document.querySelector("textarea").value
+                };
+
+                fetch(scriptURL, {
+                    method: "POST",
+                    body: JSON.stringify(formData)
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        alert("Form Submitted Successfully!");
+                        document.getElementById("franchiseForm").reset();
+                    })
+                    .catch(error => {
+                        alert("Something went wrong.");
+                    });
+
+            });
+
+    </script>
+
+</body>
+<script src="script.js"></script>
+
+</html>

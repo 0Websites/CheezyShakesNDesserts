@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="button.css">
+</head>
+
+<body>
+
+
+    <div class="cta">
+        <!--Whatsapp CTA-->
+        <a href="https://wa.me/+916263146956" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://wa.me/+916263146956" class="instagram-btn" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.zomato.com/mandsaur/cheezy-shakes-n-deserts-mandsaur-locality-mandsaur-city/order"
+            class="zomato-btn" target="_blank">
+            <img width="50px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqHGQISckX1QesKmirzIedimcmqga6qIABTwBXiCCNprRCBZ5ShbA3kGlVdk1dpLMEPKqoHYQ77hLn_ktgtsbe1ir-Q00R6hmJSQTHdZzU9-DoRY7wF9zIxOEOhwepiiMX1aRsmQtJFmBgLeUe3XQEMl38dUvg-QYyqcy6BorKPdHz63xhdPzYD1kvu88/s16000/zomato.png" alt="">
+        </a>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+        <div class="logo"><img width="100px" src="Assets/logo.png" alt=""></div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#location">Locations</a>
+            <a href="menu.html">Menu</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="index.html#about">Contact</a>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </nav>
+    <!-- ================= SLIDER ================= -->
+    <section class="slider">
+
+        <div class="slide active" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhg_W58Gwy6Mede3cYQennMtWNR58PdYYf-n7Hvw7ql1sQbtKAOobi_0BuV-M2_IDRog9aKAqAy1HvXtLo__fJu8e9BYffcZ3J3C5OBNJYA1mVfkyt9HDpjViUNv2QajjZmlBDVVZ_ncB7yqZbNvl7j-n9178OgJsRNWH5DPZrdFeB0CyYX2OrIf1jV0jM/s16000/slide1.png');"></div>
+
+        <div class="slide" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgawwoK2lVZP7tBtU2K3wa1I-HTm_CSyGu4_xx4ZOpEZ6kAO7yT6g7VOINzMNa9uHRmegBanuS8yYFCPGHr8Vfie0bgLQHdydY5nTk3zi57HJYywqMghikHhVW4ZD1-tFZ88vG5nQb5fF0Qp2BZvBjudq2t8VL2Ht3C06_KL_I90EdIEsQKqkrCLLS0ing/s16000/slide2.png');"></div>
+
+        <div class="slide" style="background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizOc6EDUzUx2wjw3vRx5EibD2Ly_SekANbNGcshq4lX1XIQfxyelbd6TwwYd8rvD6aa4AyxLdoho4JonNw1D9vBhEDGPfwOH-jk0z6QF2TZAjlzYU6THLbIppFqy90HQ8tYYswiLW5YYlwS7u28jTS7Oa30lMt-t3NBpYkbWs94dKALIfZN3IYCGZ1xuY/s16000/slide3.png');"></div>
+
+        <div class="overlay">
+            <img id="glass" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheR6rO7hBs7TAQlTBVs-8AUiyKEa_xX9OYtQMHfYzHJ4JDHhyphenhyphenujVZo4qyzoe5H5w_BSX0sNlLVzrbL2oGs_Xd5_eKPyMKmh3g1_Vr7liGbh2DO6g-c9qAg744lC9fFAK5aDYYtZrj_9PbHhBcCNKro034IEtp6c4zPA8ql0GlVtYHWKrKtsGa20YTnk8Q/s16000/glass.png" width="50px" alt="">
+            <img id="glass-2" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEheR6rO7hBs7TAQlTBVs-8AUiyKEa_xX9OYtQMHfYzHJ4JDHhyphenhyphenujVZo4qyzoe5H5w_BSX0sNlLVzrbL2oGs_Xd5_eKPyMKmh3g1_Vr7liGbh2DO6g-c9qAg744lC9fFAK5aDYYtZrj_9PbHhBcCNKro034IEtp6c4zPA8ql0GlVtYHWKrKtsGa20YTnk8Q/s16000/glass.png" width="50px" alt="">
+
+            <h1>Cheezy Shakes<br> n' Desserts</h1>
+            <p>Sip the Luxury. Taste the Obsession.</p>
+            <br>
+            <a href="franchise.html" class="story-btn">Get Franchise</a>
+        </div>
+        <div class="arrow left" onclick="prevSlide()">❮</div>
+        <div class="arrow right" onclick="nextSlide()">❯</div>
+
+    </section>
+
+    <section class="map">
+        <div class="overlay-2"></div>
+        <div class="overlay-2"></div>
+    </section>
+
+    <section class="experience-section">
+
+        <div class="container">
+
+            <span class="subtitle">FLAVORS FOR MAGIC</span>
+            <div class="divider"></div>
+
+            <h2 class="title">We Offer Best Experience</h2>
+
+            <div class="cards">
+
+                <div class="offset-card">
+                    <div class="frame"></div>
+
+                    <div class="image-wrapper">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgl47l0UFTFxm4C0t5JhvfnUkXi1ma2M5WR-yCr4RPWKa9ltwgD9Z9qItdjUY-rVd3X-LZX98lLw-QyIG9SWux3fT_7hWOHgjg9m0c9CY9RotaNq97yQX1zNMHRWj0wCiKOfm-W8MeyL7XMLZnbqJKcJFH32l-rV2PtSNG4ONZII5B-OslmbHi9FciLiQU/s16000/oreoshake.png" alt="">
+                    </div>
+
+                    <div class="card-caption">
+                        <h3>Special Oreo Shake</h3>
+                        <span>Cool • Vibrant • Fresh</span>
+                    </div>
+                </div>
+                <div class="offset-card">
+                    <div class="frame"></div>
+
+                    <div class="image-wrapper">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgrGUsXriRr7ZZcawyhYyJo4C_mGCw49_R87NCWZFYPvYaIi6k5Nao5E7SpJYUoV-h3zxFUC59lG0Npjm7M66OLBZZp6R_FOLakuJYPsr_kj2IBvg540haSZFAbzPyFx21L741RmpoZKOCJgoeoeFBK1hWAgCJKFMvOZ_28ivncznbjKABf6LEicukKgpc/s16000/kitkat.png" alt="">
+                    </div>
+
+                    <div class="card-caption">
+                        <h3>Special Kitkat Shake</h3>
+                        <span>Fresh</span>
+                    </div>
+                </div>
+                <div class="offset-card">
+                    <div class="frame"></div>
+
+                    <div class="image-wrapper">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8g3DHklpF1VuLNG8smtitbUiRJAP6m7ntF5tD_6qEmniG9ZQ_wQE9N3McRZl7R88Yy2_W0nFwCaOywUm0bqMfENkzozxLl8xU-20D1IgEzxm9TOoBwFTapf5YLbrZbxRoxLPxw-uQORCB9loPRfwJb9sTi2HJTyDGncz2xJwtMf7koiTa5g5j2_lSr5M/s16000/coldcoffee.png" alt="">
+                    </div>
+
+                    <div class="card-caption">
+                        <h3>Cold Coffee</h3>
+                        <span>Refreshing • Superb</span>
+                    </div>
+                </div>
+    </section>
+    <section id="order-now">
+        <p>Taste It Now.</p>
+        <a target="_blank"
+            href="https://www.zomato.com/mandsaur/cheezy-shakes-n-deserts-mandsaur-locality-mandsaur-city/order"
+            class="story-btn">Order Now</a>
+    </section>
+
+    <section class="story-section" id="about">
+
+        <div class="story-container">
+
+            <!-- LEFT CONTENT -->
+            <div class="story-content">
+
+                <span class="story-subtitle">Cheezy Shakes n' Desserts</span>
+
+                <div class="story-divider">
+                    <span></span>
+                </div>
+
+                <h3 class="story-title">Why We’re Different</h3>
+
+                <p class="story-text">
+                    We don’t just make shakes and desserts — we craft indulgent experiences. Every ingredient is
+                    carefully selected, every recipe perfected, and every serving designed to deliver richness in its
+                    purest form. While others focus on quantity, we obsess over quality, balance, and presentation. From
+                    the first sip to the last bite, you taste precision, passion, and premium craftsmanship.
+                </p>
+
+                <div class="story-contact">
+                    <p>For Enquiries and Suggestions:</p>
+                    <h3>+91 6263146956</h3>
+                </div>
+
+                <a href="franchise.html" class="story-btn">LOOKING FOR FRANCHISE</a>
+
+            </div>
+
+
+            <!-- RIGHT IMAGE -->
+            <div class="heritage-image">
+                <div class="image-frame">
+                    <img src="Assets/shop.jpg">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="premium-gallery" id="gallery">
+
+        <div class="gallery-header">
+            <span>OUR GALLERY</span>
+            <h2>Glimpse of Products</h2>
+            <div class="gallery-line"></div>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_Z0Q2xQORraH4NqJUbGSSJ6xwW-2GM7n5w_xEpIMOFoky7xZ0u5PTFkiGHelkWVMDkSUGhAFvuHZXK2fT9bXgmj1VPcA6D63AxD3MY-JyOXqpVRi6ElnPxlkwIl_D1onSEkWEAombNFBnnbeMLEWmMaGvHx7XGtuArVn6yclzRG7jekED5Bfipi8MG9M/s16000/gal1.png" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQsl84GoEkjeWBDUKcx-8d3KQvZl1-76HUF20W5SeKqGBi-iiyGvv234TwILW_6aOZDRKk6g9mvjtd-kPZK-RmWqYsrTMjwYLmaPHV75XyVhR8hz3RXj_EoTw0VciY11iMcF3zF5SwKJ3LzTLCpHCPIK_XkhytNnodS_ZmpA4Z4jZGTlMrpOyfuphWhmE/s16000/gal2.png" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSLx7Qx3T48x7XzjgDdGM7Ah11MJL9lJlXPH3xbDaz7Z6hN87rtWvtf2Qqi0_UEL4EYhhDiGceDPTFLVoNAuSgZiHzXyGTwpcbYpx9KToPeSDHAXoq26GwJs1SoOhTVahiCnrBuhZxuZ94xN06_6GZx6Sw27cWi3U2Ot6wMH407k-KoSZu7Ej1cEOe5Z4/s16000/gal3.png" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjN-HmY3UJWERAxr0lOWmIKVIfIXV5f6MK_rCxSEpinlnti7j5oYKUAp2lnmP5O639pw78Lb8-r2bEe23f4k7V2yk1y2NW-rCq_e6vzcYrlmcHNgepybea9zTAGTnb-kQMYbGNMifnRY2fdRkbZOyW3qAuNJSLeNdi5U0Z6c5a8XWAmPLWuxB5UK_kyCM4/s16000/gal4.png" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbrDn5gVE01d831dEac0kpyMvxHHIOpiz2jlmBoh1r5FEbnU0rMIXV9yYnGKVnIYrWr9t5ujjtu9ZRketmn28wdA5sv4H9zYGM2s38igDBmAcj1Hs4V21TK55G8R1whsoc8yED6EBYPuilH0mnL6nevvahEidwR96yHbsXd8L1xr849Yb8Xdbp8TypfAo/s16000/gal5.png" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzu2qQ_UORtrcvkwUpUYvLntZc-LMlw0enN2E3LP0BEfvNZ56DzquAlRexRNMqov-ZVLrebiSc6r52qxl2FeMd0LHkvTuaUQHZoLV2lgpAvDYuAomkTXaPYho6uTsj7SaMGIT_EGZPUep0ayBv-XCpHj3GK1ArTHWUw99Vk6SqIkuCoAEDUKV_-z2LL68/s16000/gal6.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="heritage-location" id="location">
+
+        <div class="heritage-header">
+            <span>OUR LOCATIONS</span>
+            <h2>Where Tradition Meets Taste</h2>
+            <div class="heritage-line"></div>
+        </div>
+
+        <div class="heritage-container">
+
+            <!-- LEFT IMAGE -->
+            <div class="heritage-image">
+                <div class="image-frame">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9y8sa3OOLkK38tpLvrxTNE44Hcn5Z7OVS8nV_zRsx_JWRzuks0TmeMipt7S-lCoEHsHxvGR_fNY2rF93UORRsVa_pBnSq9SiYUpo5ps8VC5B4uNx-TWn7jStr-jPDGCgZvFqPspsASS31srqjJMJUuKo9__2ctOLCWB1Rnf7f6_SxuQlilpjHpNhlK94/s16000/shop.jpg">
+                </div>
+            </div>
+
+            <!-- RIGHT DETAILS -->
+            <div class="heritage-details">
+
+                <div class="heritage-card">
+                    <h3>Mandsaur - Branch 1</h3>
+                    <p>Tit 24 Tit Complex, Mandsaur, Madhya Pradesh 458001</p>
+                    <span>12:00 AM – 11:00 PM</span>
+                </div>
+
+                <div class="heritage-card">
+                    <h3>Mandsaur - Branch 2</h3>
+                    <p>339F+XFM, Railway Station Rd, Baser Colony, Police Colony, Mandsaur, Madhya Pradesh 458001</p>
+                    <span>12:00 AM – 11:00 PM</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="team-section">
+
+        <div class="team-header">
+            <span>EXPERIENCED TEAM</span>
+            <h2>Meet the Team</h2>
+            <div class="team-divider"></div>
+        </div>
+
+        <div class="team-container">
+
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3-EEaEAw7hMoxMwa2lnW7-Y5LQWn1opC50I-NHNL-rbq3ApMr_Vaq0L4xaDIfhwaVd9dRRYj9MibcbLJM-aq5QAcLPlVLzfOKtKGPo462Z-jgUtwysk5vJLnpY0nufiTPfTYwGTd4uNLTFNSONzXvRdL3u0RErN8POzmFG6iNUkBGnPTUgQhfGzu4YlE/s16000/mayank-b.jpg" alt="">
+                </div>
+                <div class="team-info">
+                    <h3>Mayank Bhawsar</h3>
+                    <p>Founder</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="premium-footer">
+
+        <div class="footer-overlay"></div>
+
+        <div class="footer-container">
+
+            <!-- LEFT LINKS -->
+            <div class="footer-col footer-left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#location">Locations</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#about">Contact Us</a></li>
+                    <li><a href="franchise.html">Get a Franchise</a></li>
+                </ul>
+            </div>
+
+            <!-- CENTER BRAND -->
+            <div class="footer-center">
+                <div class="brand-box">
+                    <h3>CHEEZY'S SHAKES <br>n' DESSERTS</h3>
+                    <div class="gold-divider"></div>
+                    <p>Taste and quality you deserve</p>
+                </div>
+            </div>
+
+            <!-- RIGHT LINKS -->
+            <div class="footer-col footer-right">
+                <div class="insta">
+                    <p>Follow us on Instagram</p>
+                    <a href="https://www.instagram.com/cheezy_shakes_n_desserts/">@cheezy_shakes_n_desserts</a>
+                </div>
+
+                <ul class="policy-links">
+                    <li><a
+                            href="https://www.zomato.com/mandsaur/cheezy-shakes-n-deserts-mandsaur-locality-mandsaur-city/order">Zomato</a>
+                    </li>
+                    <li><a href="https://maps.app.goo.gl/nv6YpM6HmtbPiQyi7">Map</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>Owned by <span>Mayank Bhawsar</span></p>
+            <p>Cheezy Shakes n' Desserts · Website Developed by <a target="_blank"
+                    href="https://www.instagram.com/_vedanssh/">Vedansh Derashri</a></p>
+        </div>
+
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
