@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers - Cheezy Shakes N Desserts</title>
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+      background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh6kfNy14mnQ0Egs_1rKXITpRS43DBonNoM_gkwRyIfcZaKaR29IJaZaRCmfOZov6fZKp5N6BShhzNxmKRYuYHOmF8BtLehc4Wjl5cAfD2LbrwGXL8xyJbhIPvHNXOW0BzNvp1YCjxReXBN1PafKyOVwR7gIgJzknAIQIV83EC40M5pQx8o57Omd9hpNdY/s16000/bg1.png');
+
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    padding: 60px;
+    margin-top: 80px;
+}
+
+/* LEFT MENU */
+.sidebar {
+    width: 25%;
+    border-right: 1px solid #333;
+    padding-right: 30px;
+}
+
+.sidebar h3 {
+    color: #c9a14a;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    color: #c9a14a;
+}
+
+/* MAIN CONTENT */
+.content {
+    width: 75%;
+    padding-left: 40px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.title span {
+    color: #c9a14a;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+/* JOB ITEMS */
+.job {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #222;
+}
+
+.job h3 {
+    margin: 0;
+}
+
+.job p {
+    color: #aaa;
+    margin-top: 5px;
+}
+
+/* FORM */
+.form-section {
+    margin-top: 80px;
+    background: #111;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    color: #c9a14a;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form input, form select, form textarea {
+    padding: 12px;
+    background: #0b0b0b;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+form textarea {
+    grid-column: span 2;
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    grid-column: span 2;
+    padding: 15px;
+    background: #c9a14a;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #fff;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="cta">
+        <!--Whatsapp CTA-->
+        <a href="https://wa.me/+916263146956" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/cheezy_shakes_n_desserts/" class="instagram-btn" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.zomato.com/mandsaur/cheezy-shakes-n-deserts-mandsaur-locality-mandsaur-city/order"
+            class="zomato-btn" target="_blank">
+            <img width="50px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqHGQISckX1QesKmirzIedimcmqga6qIABTwBXiCCNprRCBZ5ShbA3kGlVdk1dpLMEPKqoHYQ77hLn_ktgtsbe1ir-Q00R6hmJSQTHdZzU9-DoRY7wF9zIxOEOhwepiiMX1aRsmQtJFmBgLeUe3XQEMl38dUvg-QYyqcy6BorKPdHz63xhdPzYD1kvu88/s16000/zomato.png" alt="">
+        </a>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+        <div class="logo"><img width="100px" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgh7rVmZNhYOP4Kg5NmT_t4ZoH008XbVNyPiwVD_WWTXH89jul7TLMkWA5FEo1ObB_bLSXdWZMbxHPmqk8vNjUje3jtGiPrnAhvXPAVo6vYQuD5olEHu7655Cq2HQvl5WGgD7hSIsevzLVLu2a0d5yk_UgPl673PNaCzS6S_Sqr6VoUkcnWdL5QfLg1Hr4/s320/logo.png" alt=""></div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#location">Locations</a>
+            <a href="menu.html">Menu</a>
+            <a href="franchise.html">Franchise</a>
+            <a href="Career.html">Career</a>
+            <a href="index.html#about">Contact</a>
+        </div>
+
+        <div class="menu-toggle" id="menuToggle">☰</div>
+    </nav>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="sidebar">
+        <h3>Job Roles</h3>
+        <ul>
+            <li>Store Manager</li>
+            <li>Barista</li>
+            <li>Shift Supervisor</li>
+            <li>HR Executive</li>
+        </ul>
+    </div>
+    
+    <!-- RIGHT SIDE -->
+    <div class="content">
+        <!-- FORM -->
+        <div class="form-section">
+            <h2>Apply Now</h2>
+    
+            <form id="jobForm">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+    
+                <select required>
+                    <option value="">Select Position</option>
+                    <option>Store Manager</option>
+                    <option>Barista</option>
+                    <option>Shift Supervisor</option>
+                    <option>HR</option>
+                </select>
+    
+                <textarea placeholder="Tell us about yourself"></textarea>
+    
+                <button type="submit" id="submitBtn">Submit Application</button>
+                <p id="statusMsg"></p>
+            </form>
+        </div>
+
+        <div class="title">
+            <span>CAREERS</span>
+            <h1>Work With Passion</h1>
+        </div>
+
+        <div class="job">
+            <h3>Store Manager</h3>
+            <p>Full-time role managing store operations, staff, and performance.</p>
+            <p><strong>Salary:</strong> ₹15,000 – ₹20,000</p>
+        </div>
+
+        <div class="job">
+            <h3>Barista (Kitchen Staff)</h3>
+            <p>Part-time role preparing beverages and maintaining kitchen hygiene.</p>
+            <p><strong>Salary:</strong> ₹9,000 – ₹14,000</p>
+        </div>
+
+        <div class="job">
+            <h3>Shift Supervisor</h3>
+            <p>Full-time role supervising shifts and ensuring smooth operations.</p>
+            <p><strong>Salary:</strong> ₹12,000 – ₹18,000</p>
+        </div>
+
+        <div class="job">
+            <h3>HR (Human Resources)</h3>
+            <p>Responsible for hiring, employee management, and HR operations.</p>
+            <p><strong>Salary:</strong> Starting ₹15,000</p>
+        </div>
+
+
+    </div>
+</div>
+<footer class="premium-footer">
+
+        <div class="footer-overlay"></div>
+
+        <div class="footer-container">
+
+            <!-- LEFT LINKS -->
+            <div class="footer-col footer-left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#location">Locations</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#about">Contact Us</a></li>
+                    <li><a href="franchise.html">Get a Franchise</a></li>
+                </ul>
+            </div>
+
+            <!-- CENTER BRAND -->
+            <div class="footer-center">
+                <div class="brand-box">
+                    <h3>CHEEZY'S SHAKES <br>n' DESSERTS</h3>
+                    <div class="gold-divider"></div>
+                    <p>Taste and quality you deserve</p>
+                </div>
+            </div>
+
+            <!-- RIGHT LINKS -->
+            <div class="footer-col footer-right">
+                <div class="insta">
+                    <p>Follow us on Instagram</p>
+                    <a href="https://www.instagram.com/cheezy_shakes_n_desserts/">@cheezy_shakes_n_desserts</a>
+                </div>
+
+                <ul class="policy-links">
+                    <li><a
+                            href="https://www.zomato.com/mandsaur/cheezy-shakes-n-deserts-mandsaur-locality-mandsaur-city/order">Zomato</a>
+                    </li>
+                    <li><a href="https://maps.app.goo.gl/nv6YpM6HmtbPiQyi7">Map</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>Owned by <span>Mayank Bhawsar</span></p>
+            <p>Cheezy Shakes n' Desserts · Website Developed by <a target="_blank"
+                    href="https://www.instagram.com/_vedanssh/">Vedansh Derashri</a></p>
+        </div>
+
+    </footer>
+</body>
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbz4gsAkQgL3IJA80EC-z1izv3_uV9pT3q7m40ks1l2MGPSfjbATRCfaqgMCeEpG6tse/exec";
+
+const form = document.getElementById("jobForm");
+const btn = document.getElementById("submitBtn");
+const statusMsg = document.getElementById("statusMsg");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Change button state
+    btn.innerText = "Submitting...";
+    btn.disabled = true;
+    statusMsg.innerText = "";
+
+    const formData = {
+        name: form[0].value,
+        email: form[1].value,
+        phone: form[2].value,
+        position: form[3].value,
+        message: form[4].value
+    };
+
+    fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify(formData)
+    })
+    .then(res => res.json())
+    .then(data => {
+        btn.innerText = "Submitted ✓";
+        statusMsg.innerText = "Your application has been submitted successfully!";
+        statusMsg.style.color = "#4CAF50";
+
+        form.reset();
+
+        // Reset button after 3 sec
+        setTimeout(() => {
+            btn.innerText = "Submit Application";
+            btn.disabled = false;
+        }, 3000);
+    })
+    .catch(err => {
+        btn.innerText = "Try Again";
+        statusMsg.innerText = "Submission failed. Please try again.";
+        statusMsg.style.color = "red";
+
+        btn.disabled = false;
+        console.error(err);
+    });
+});
+</script>
+</html>
